@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/satin-black.png);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card{
+    width: 90%;
+    max-width: 440px;
+    color: white;
+    text-align: center;
+    padding: 50px 35px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 16%;
+    box-shadow: 0 4px 30px rgba(0,0,0,0.1);
+    backdrop-filter: blur(5px);
+}
+.card img{
+    width: 200px;
+    border-radius: 50%;
+}
+.card h2{
+    font-size: 40px;
+    font-weight: 600;
+    margin-top: 50px;
+}
+.card p{
+    font-size: 18px;
+    margin: 10px auto;
+    max-width: 330px;
+}
+.container .card .links a i{
+    font-size: 40px;
+    width: 80px;
+    margin: 50px 5px 0;
+    border-radius: 20%;
+    transition: background 0.5s;
+}
+#fb{
+    color: blue;
+}
+#ig{
+    color: orangered;
+}
+#yt{
+    color: red;
+}
+.container .card .links a i:hover{
+    background: white;
+}
+.btn{
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 500;
+    background: green;
+    color: black;
+    padding: 10px 30px;
+    border-radius: 30px;
+    margin: 30px 0px 10px;
+}
