@@ -1,71 +1,427 @@
+/* -------------------- Created by Michalis Karatsioris -------------------- */
+
+/* -------------------- GENERAL SET UP -------------------- */
+
 *{
     margin: 0;
     padding: 0;
-    font-family: sans-serif;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
 }
-.container{
+
+/* -------------------- BACKGROUND SET UP -------------------- */
+
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background: #080808;
+    color: #fff;
+}
+#header{
     width: 100%;
     height: 100vh;
-    background-image: url(images/satin-black.png);
-    background-position: center;
+    background: url(img/satin-black.png);
     background-size: cover;
+    background-position: center;
+}
+.container{
+    padding: 10px 10%;
+    position: relative;
+}
+
+/* -------------------- NAVIGATION BAR STYLING -------------------- */
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    /* extra */
+    padding: 20px 0;
+}
+.logo{
+    width: 400px;
+    height: 70px;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    position: relative;
+}
+    /* the underscore line - hidden => width: 0; */
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: crimson;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.7s;
+}
+nav ul li a:hover::after{
+    width: 100%;
+}
+
+/* -------------------- ABOUT SECTION SET UP -------------------- */
+
+
+
+/* -------------------- ABOUT SECTION SET UP -------------------- */
+
+#about{
+    padding: 80px 0;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.about-column-left{
+    flex-basis: 35%;
+}
+.about-column-left img{
+    width: 100%;
+    border-radius: 50%;
+}
+.about-column-right{
+    flex-basis: 60%;
+}
+.sub-title{
+    font-size: 60px;
+    font-weight: 600;
+    color: crimson;
+    position: relative;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.sub-title::after{
+    content: '';
+    width: 270px;
+    height: 3px;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.7s;
+}
+.tab-titles{
+    display: flex;
+    margin: 20px 0 40px;
+}
+.tab-categories{
+    margin-right: 50px;
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+.tab-categories::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: crimson;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.7s;
+}
+.tab-categories.active-category::after{
+    width: 100%;
+}
+.tab-categories:hover::after{
+    width: 100%;
+}
+.tab-contents{
+    margin: 10px 0;
+    font-size: 15px;
+}
+#articles ul li{
+    list-style-type: circle;
+}
+.tab-contents{
+    display: none;
+}
+.tab-contents.active-tab{
+    display: block;
+}
+#articles li a{
+    color: #fff;
+}
+
+/* -------------------- SCHEDULE SECTION SET UP -------------------- */
+
+#schedule{
+    padding: 30px 0;
+}
+.schedule-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+/* card styling */
+.schedule-list div{
+    background: #262626;
+    padding: 40px;
+    font-size: 15px;
+    font-weight: 300;
+    border-radius: 30px;
+    transition: all 0.5s ease;
+}
+/* title styling */
+.schedule-list div h2{
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.schedule-list div h2 span{
+    color: crimson;
+}
+/* hover effect */
+.schedule-list div:hover{
+    background: crimson;
+    transform: translateY(-10px);
+}
+
+/* -------------------- GALLERY SECTION SET UP -------------------- */
+
+#gallery{
+    padding: 50px 0;
+}
+.gallery-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+.gallery-card{
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+.gallery-card img{
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    transition: all 0.7s ease;
+}
+.layer-card{
+    width: 100%;
+    height: 0;
+    background: linear-gradient(rgba(0,0,0,0.6),crimson);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
     display: flex;
     align-items: center;
     justify-content: center;
-}
-.card{
-    width: 90%;
-    max-width: 440px;
-    color: white;
+    flex-direction: column;
+    padding: 0 40px;
     text-align: center;
-    padding: 50px 35px;
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    background: rgba(255, 255, 255, 0.03);
-    border-radius: 16%;
-    box-shadow: 0 4px 30px rgba(0,0,0,0.1);
-    backdrop-filter: blur(5px);
-}
-.card img{
-    width: 200px;
-    border-radius: 50%;
-}
-.card h2{
     font-size: 40px;
-    font-weight: 600;
-    margin-top: 50px;
+    transition: all 0.7s ease;
 }
-.card p{
-    font-size: 18px;
-    margin: 10px auto;
-    max-width: 330px;
-}
-.container .card .links a i{
-    font-size: 40px;
-    width: 80px;
-    margin: 50px 5px 0;
-    border-radius: 20%;
-    transition: background 0.5s;
-}
-#fb{
-    color: blue;
-}
-#ig{
-    color: orangered;
-}
-#yt{
-    color: red;
-}
-.container .card .links a i:hover{
-    background: white;
-}
-.btn{
-    text-decoration: none;
-    display: inline-block;
-    font-size: 18px;
+.layer-card h3{
     font-weight: 500;
-    background: green;
-    color: black;
-    padding: 10px 30px;
-    border-radius: 30px;
-    margin: 30px 0px 10px;
+    margin-bottom: 10px;
 }
+.layer-card a{
+    margin-top: 60px;
+    color: crimson;
+    text-decoration: none;
+    font-size: 20px;
+    line-height: 60px;
+    background: #fff;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+}
+.gallery-card:hover img{
+    transform: scale(1.1);
+}
+.gallery-card:hover .layer-card{
+    height: 100%;
+}
+
+/* -------------------- CONTACT SECTION SET UP -------------------- */
+
+.contact-left{
+    flex-basis: 35%;
+}
+.contact-right{
+    flex-basis: 60%;
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+}
+.contact-left p{
+    margin-top: 30px;
+    font-size: 20px;
+}
+.contact-left p i{
+    color: crimson;
+    margin-right: 15px;
+    font-size: 25px;
+}
+#red{
+    color: crimson;
+    text-decoration: underline;
+}
+.social-icons{
+    margin-top: 30px;
+}
+.social-icons a{
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    color: #fff;
+    display: inline-block;
+    transition: all 0.5s ease;
+}
+.social-icons a:hover{
+    color: crimson;
+    transform: translateY(-5px);
+}
+.btn.btn2{
+    display: inline-block;
+    background: crimson;
+    font-size: 20px;
+    font-weight: 500;
+    color: #fff;
+    transition: all 0.5s ease;
+}
+.btn.btn2:hover{
+    background: none;
+    color: crimson;
+}
+.contact-right form{
+    width: 100%;
+}
+form input,
+form textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #262626;
+    padding: 15px;
+    margin: 15px 0;
+    color: #fff;
+    font-size: 20px;
+    border-radius: 6px;
+}
+form .btn2{
+    margin-top: 20px;
+    padding: 15px 60px;
+    border: solid crimson 2px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+form .form-name,
+form .form-info,
+form .form-place{
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    padding-right: 5px;
+}
+form input,
+form textarea{
+    margin: 5px;
+}
+#msg{
+    color: #61b752;
+    margin-top: 10px;
+    display: block;
+}
+
+/* -------------------- FOOTER SECTION SET UP -------------------- */
+
+footer{
+    color: #fff;
+    width: 100%;
+    text-align: center;
+    padding: 25px 0;
+    background: #262626;
+    font-size: 17px;
+    font-weight: 600;
+    margin-top: 30px;
+}
+footer i{
+    color: crimson;
+}
+
+/* RESPONSIVE MEDIA QUERY SET UP */
+
+nav .fas{
+    display: none;
+}
+
+@media only screen and (max-width: 600px) { 
+    nav .logo{
+        width: 200px;
+        height: 40px;
+    }
+    nav .fas{
+        display: block;
+        font-size: 20px;
+    }
+    nav ul{
+        background: crimson;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: all 0.7s ease;
+    }
+    nav ul li{
+        display: block;
+        margin: 25px;
+        font-weight: 600;
+    }
+    nav ul .fas{
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+    .sub-title{
+        font-size: 40px;
+    }
+    .about-column-left,
+    .about-column-right{
+        flex-basis: 100%;
+    }
+    .about-column-left{
+        margin-bottom: 30px;
+    }
+    .about-column-right{
+        font-size: 15px;
+    }
+    .tab-categories{
+        font-size: 20px;
+        margin-right: 20px;
+    }
+    .contact-left,
+    .contact-right{
+        flex-basis: 100%;
+    }
+    footer{
+        font-size: 12px;
+    }
+}
+
+
+/* -------------------- Created by Michalis Karatsioris -------------------- */

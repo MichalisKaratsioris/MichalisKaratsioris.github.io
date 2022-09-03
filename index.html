@@ -1,37 +1,411 @@
 <!DOCTYPE html>
+
+<!-- Created my Michalis Karatsioris -->
+
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Glassmorphism</title>
+    <title>Alejandra Mantiñan</title>
+    <link rel="icon" type="x-icon" href="img/favicon.png">
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/a595256187.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
-    <div class="container">
-        <div class="card" data-tilt>
-            <img src="images/MorozaBeautifulSmile.jpg" alt="">
-            <h2>Alejandra Mantinan</h2>
-            <p>I am an Artist. and i love animals, <br> Interior Design and good food!</p>
-            <div class="links">
-                <a href="https://facebook.com/alejandra.mantinan" target="_blank"><i id="fb" class="fa-brands fa-facebook"></i></a>
-                <a href="https://instagram.com/alejandra.mantinan" target="_blank"><i id="ig" class="fa-brands fa-square-instagram"></i></a>
-                <a href="https://youtube.com/alejandra.mantinan" target="_blank"><i id="yt" class="fa-brands fa-youtube"></i></a>
-            </div>
-            <a href="" class="btn">message me</a>
+    <!-- NAVIGATION BAR SECTION -->
+
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="img/logo-name.png" alt="Alejandra Mantiñan logo" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#home">home</a></li>
+                    <li><a href="#about">about</a></li>
+                    <li><a href="#schedule">schedule</a></li>
+                    <li><a href="#gallery">gallery</a></li>
+                    <li><a href="#contact">contact</a></li>
+                    <i class="fas fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
         </div>
     </div>
-    
-    <!-- <script src="script.js"></script> -->
-    <script src="vanilla-tilt.js"></script>
+
+    <!-- -------------------- HOME SECTION -------------------- -->
+
+    <!-- <div id="home">
+        <div class="container">
+            <video autoplay loop muted src="gallery/videos/Pavadita.mp4"></video>
+        </div>
+    </div> -->
+
+
+    <!-- -------------------- ABOUT SECTION -------------------- -->
+
+    <div id="about">
+        <div class="container">
+            <h1 class="sub-title">about me</h1>
+            <div class="row">
+                <div class="about-column-left">
+                    <img src="gallery/photos/am18.jpg" alt="Alejandra photo">
+                </div>
+                <div class="about-column-right">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Reiciendis dolores hic, sit beatae vel ab doloribus quisquam 
+                        quo veritatis debitis. Accusantium similique officia molestias? 
+                        Rem non ipsum quia velit quae assumenda reprehenderit fuga quasi 
+                        unde! At aliquid accusamus eius repellendus ex blanditiis soluta 
+                        itaque omnis inventore, et porro adipisci magnam pariatur, fuga 
+                        voluptatum sed hic quas consequuntur perspiciatis? Tempora esse 
+                        eligendi recusandae laudantium temporibus cupiditate aliquid, 
+                        neque dolore sapiente consequuntur, iure magni voluptates fuga 
+                        aliquam? Totam, repellendus beatae ex labore ducimus qui aut 
+                        fuga consequatur sequi earum modi magnam corporis velit ipsa, 
+                        debitis vel reiciendis quaerat veniam vero sed eius.
+                    </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-categories active-category" onclick="opentab('bio')">Bio</p>
+                        <p class="tab-categories" onclick="opentab('amt')">AMT</p>
+                        <p class="tab-categories" onclick="opentab('articles')">Online Articles</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="bio">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque, quas.
+                        </p>
+                        <br>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur 
+                            asperiores voluptatibus aut maiores eius tempora impedit nobis optio 
+                            ipsam commodi?
+                        </p>
+                    </div>
+                    <div class="tab-contents" id="amt">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur 
+                            asperiores voluptatibus aut maiores eius tempora impedit nobis optio 
+                            ipsam commodi?
+                        </p>
+                    </div>
+                    <div class="tab-contents" id="articles">
+                        <ul>
+                            <li>
+                                <a href="https://www.ultimatetango.com/blog/alejandra-mantinan-controversial-tango-legend" target="_blank">Alejandra Mantiñan: Controversial Legend of Argentine Tango</a>
+                            </li>
+                            <br>
+                            <li>
+                                <a href="https://tangofashionnews.com.ar/alejandra-mantinan-a-tango-dancing-angel/" target="_blank">Alejandra Mantiñan. A Tango dancing Angel</a>
+                            </li>
+                            <br>
+                            <li>
+                                <a href="https://www.tango-space.com/alejandra-mantinans-advice-readers/" target="_blank">Alejandra Mantiñan's advice in Tango Classes in London</a>
+                            </li>
+                            <br>
+                            <li>
+                                <a href="https://tangochamps.com/actor/alejandra-mantinan-judge/" target="_blank">Alejandra Mantiñan in TangoChamps</a>
+                            </li>
+                            <br>
+                            <li>
+                                <a href="https://milonguerosallaboard.com/alejandra-martinan-gustavo-russo/" target="_blank">Interview with Gustavo Russo and Alejandra Mantiñan</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- -------------------- SCHEDULE SECTION -------------------- -->
+    <div id="schedule">
+        <div class="container">
+            <h1 class="sub-title">my schedule</h1>
+            <div class="schedule-list">
+                <div>
+                    <h2>January 20<span>23</span></h2>
+                    <ul>
+                        <li><p>Event Title</p></li>
+                        <li><p>dates</p></li>
+                        <br>
+                        <li><p>Event Title</p></li>
+                        <li><p>dates</p></li>
+                        <br>
+                        <li><p>Event Title</p></li>
+                        <li><p>dates</p></li>
+                        <br>
+                        <li><p>Event Title</p></li>
+                        <li><p>dates</p></li>
+                    </ul>
+                </div>
+                <div>
+                    <h2>February 20<span>23</span></h2>
+                    <ul>
+                        <li><p>Event Title</p></li>
+                        <li><p>dates</p></li>
+                        <br>
+                        <li><p>Event Title</p></li>
+                        <li><p>dates</p></li>
+                        <br>
+                        <li><p>Event Title</p></li>
+                        <li><p>dates</p></li>
+                        <br>
+                        <li><p>Event Title</p></li>
+                        <li><p>dates</p></li>
+                    </ul>
+                </div>
+                <div>
+                    <h2>March 20<span>23</span></h2>
+                    <ul>
+                        <li><p>Event Title</p></li>
+                        <li><p>dates</p></li>
+                        <br>
+                        <li><p>Event Title</p></li>
+                        <li><p>dates</p></li>
+                        <br>
+                        <li><p>Event Title</p></li>
+                        <li><p>dates</p></li>
+                        <br>
+                        <li><p>Event Title</p></li>
+                        <li><p>dates</p></li>
+                    </ul>
+                </div>
+                <div>
+                    <h2>April 20<span>23</span></h2>
+                    <ul>
+                        <li><p>Event Title</p></li>
+                        <li><p>dates</p></li>
+                        <br>
+                        <li><p>Event Title</p></li>
+                        <li><p>dates</p></li>
+                        <br>
+                        <li><p>Event Title</p></li>
+                        <li><p>dates</p></li>
+                        <br>
+                        <li><p>Event Title</p></li>
+                        <li><p>dates</p></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="schedule-list">
+                <div>
+                    <h2>May 20<span>23</span></h2>
+                    <ul>
+                        <li><p>Event Title</p></li>
+                        <li><p>dates</p></li>
+                        <br>
+                        <li><p>Event Title</p></li>
+                        <li><p>dates</p></li>
+                        <br>
+                        <li><p>Event Title</p></li>
+                        <li><p>dates</p></li>
+                        <br>
+                        <li><p>Event Title</p></li>
+                        <li><p>dates</p></li>
+                    </ul>
+                </div>
+                <div>
+                    <h2>June 20<span>23</span></h2>
+                    <ul>
+                        <li><p>Event Title</p></li>
+                        <li><p>dates</p></li>
+                        <br>
+                        <li><p>Event Title</p></li>
+                        <li><p>dates</p></li>
+                        <br>
+                        <li><p>Event Title</p></li>
+                        <li><p>dates</p></li>
+                        <br>
+                        <li><p>Event Title</p></li>
+                        <li><p>dates</p></li>
+                    </ul>
+                </div>
+                <div>
+                    <h2>July 20<span>23</span></h2>
+                    <ul>
+                        <li><p>Event Title</p></li>
+                        <li><p>dates</p></li>
+                        <br>
+                        <li><p>Event Title</p></li>
+                        <li><p>dates</p></li>
+                        <br>
+                        <li><p>Event Title</p></li>
+                        <li><p>dates</p></li>
+                        <br>
+                        <li><p>Event Title</p></li>
+                        <li><p>dates</p></li>
+                    </ul>
+                </div>
+                <div>
+                    <h2>August 20<span>23</span></h2>
+                    <ul>
+                        <li><p>Event Title</p></li>
+                        <li><p>dates</p></li>
+                        <br>
+                        <li><p>Event Title</p></li>
+                        <li><p>dates</p></li>
+                        <br>
+                        <li><p>Event Title</p></li>
+                        <li><p>dates</p></li>
+                        <br>
+                        <li><p>Event Title</p></li>
+                        <li><p>dates</p></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="schedule-list">
+                <div>
+                    <h2>September 20<span>23</span></h2>
+                    <ul>
+                        <li><p>Event Title</p></li>
+                        <li><p>dates</p></li>
+                        <br>
+                        <li><p>Event Title</p></li>
+                        <li><p>dates</p></li>
+                        <br>
+                        <li><p>Event Title</p></li>
+                        <li><p>dates</p></li>
+                        <br>
+                        <li><p>Event Title</p></li>
+                        <li><p>dates</p></li>
+                    </ul>
+                </div>
+                <div>
+                    <h2>October 20<span>22</span></h2>
+                    <ul>
+                        <li><p>Event Title</p></li>
+                        <li><p>dates</p></li>
+                        <br>
+                        <li><p>Event Title</p></li>
+                        <li><p>dates</p></li>
+                        <br>
+                        <li><p>Event Title</p></li>
+                        <li><p>dates</p></li>
+                        <br>
+                        <li><p>Event Title</p></li>
+                        <li><p>dates</p></li>
+                    </ul>
+                </div>
+                <div>
+                    <h2>Novemebr 20<span>22</span></h2>
+                    <ul>
+                        <li><p>Event Title</p></li>
+                        <li><p>dates</p></li>
+                        <br>
+                        <li><p>Event Title</p></li>
+                        <li><p>dates</p></li>
+                        <br>
+                        <li><p>Event Title</p></li>
+                        <li><p>dates</p></li>
+                        <br>
+                        <li><p>Event Title</p></li>
+                        <li><p>dates</p></li>
+                    </ul>
+                </div>
+                <div>
+                    <h2>December 20<span>22</span></h2>
+                    <ul>
+                        <li><p>Event Title</p></li>
+                        <li><p>dates</p></li>
+                        <br>
+                        <li><p>Event Title</p></li>
+                        <li><p>dates</p></li>
+                        <br>
+                        <li><p>Event Title</p></li>
+                        <li><p>dates</p></li>
+                        <br>
+                        <li><p>Event Title</p></li>
+                        <li><p>dates</p></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- -------------------- GALLERY SECTION -------------------- -->
+
+    <div id="gallery">
+        <div class="container">
+            <div class="sub-title">my gallery</div>
+            <div class="gallery-list">
+                <div class="gallery-card">
+                    <img src="gallery/photos/am12.jpg" alt="Alejandra and Shiushin">
+                    <div class="layer-card">
+                        <h3>Photos</h3>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="gallery-card">
+                    <img src="gallery/photos/am05.jpg" alt="Alejandra and Gustavo in Tango Pasion">
+                    <div class="layer-card">
+                        <h3>Videos</h3>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="gallery-card">
+                    <img src="gallery/photos/am08.jpg" alt="Alejandra in Bubai desert">
+                    <div class="layer-card">
+                        <h3>Music!</h3>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- -------------------- CONTACT SECTION -------------------- -->
+
+    <div id="contact">
+        <div class="container">
+            <h1 class="sub-title">contact me</h1>
+            <div class="row">
+                <div class="contact-left">
+                    <p>Follow me and Subscribe in my <span id="red">NEW YouTube Channel!</span></p>
+                    <p><i class="fa-solid fa-paper-plane"></i> aleitango@hotmail.com</p>
+                    <p><i class="fa-brands fa-whatsapp"></i> +5491163654050</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/alejandra.mantinan" target="_blank"><i id="social-fb" class="fab fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/alejandra_mantinan/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.youtube.com/channel/UCffFP0pSEGYQ8YBKmS0t1iQ/videos?view=0&sort=p" target="_blank"><i id="social-yt" class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="contact-right">
+                    <form action="https://formsubmit.co/mkaratsioris@yahoo.com" method="POST">
+                        <div class="form-name">
+                            <input type="text" name="First Name" placeholder="First Name" required>
+                            <input type="text" name="Last Name" placeholder="Last Name" required>
+                        </div>
+                        <div class="form-place">
+                            <input type="text" name="City" placeholder="City"required>
+                            <input type="text" name="Country" placeholder="Country"required>
+                        </div>
+                        <div class="form-info">
+                            <input id="email" type="text" name="Email" placeholder="Email" required>
+                            <input id="subject" type="text" name="Subject" placeholder="Subject" required>
+                            <input type="hidden" name="_subject" value="New email from alejandramantiñan.com">
+                        </div>
+                        <textarea name="Message" cols="5" rows="5" placeholder="Type your message here!"></textarea>
+                        <button type="submit" class="btn btn2">Send!</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- -------------------- FOOTER SECTION -------------------- -->
+
+    <footer>
+        <span><span class="far fa-copyright"></span>Alejandra Mantiñan 2022. All rights reserved.
+        <br>
+        ~ Created with <span class="red"><i class="fas fa-heart"></i> by MorakiMu ~</span>
+    </footer>
+
+<script src="script.js"></script>
 </body>
+
+<!-- Created my Michalis Karatsioris -->
+
 </html>
-
-<!-- 
-PROBLEMS
-    - 
-
-
- -->
