@@ -1,3 +1,5 @@
+// -------------------- Created by Michalis Karatsioris -------------------- 
+
 $(document).ready(function(){
     $(window).scroll(function(){
         // sticky navbar on scroll script
@@ -33,45 +35,28 @@ $(document).ready(function(){
         $('.menu-btn i').toggleClass("active");
     });
 
-    // typing text animation script
-    var typed = new Typed(".typing", {
-        strings: ["YouTuber", "Developer", "Blogger", "Designer", "Freelancer"],
-        typeSpeed: 100,
-        backSpeed: 60,
-        loop: true
-    });
-
-    var typed = new Typed(".typing-2", {
-        strings: ["YouTuber", "Developer", "Blogger", "Designer", "Freelancer"],
-        typeSpeed: 100,
-        backSpeed: 60,
-        loop: true
-    });
-
     // owl carousel script
-    $('.carousel').owlCarousel({
-        margin: 20,
-        loop: true,
-        autoplay: true,
-        autoplayTimeOut: 2000,
-        autoplayHoverPause: true,
-        responsive: {
-            0:{
-                items: 1,
-                nav: false
-            },
-            600:{
-                items: 2,
-                nav: false
-            },
-            1000:{
-                items: 3,
-                nav: false
-            }
-        }
-    });
-
-    
+    // $('.carousel').owlCarousel({
+    //     margin: 20,
+    //     loop: true,
+    //     autoplay: true,
+    //     autoplayTimeOut: 2000,
+    //     autoplayHoverPause: true,
+    //     responsive: {
+    //         0:{
+    //             items: 1,
+    //             nav: false
+    //         },
+    //         600:{
+    //             items: 2,
+    //             nav: false
+    //         },
+    //         1000:{
+    //             items: 3,
+    //             nav: false
+    //         }
+    //     }
+    // });
 });
 
 // tabs functionality in about me section
@@ -89,13 +74,4 @@ function opentab(tabname){
     document.getElementById(tabname).classList.add("active-tab");
 }
 
-// responsive navigation bar
-var sidemenu = document.getElementById("sidemenu");
-
-function openmenu(){
-    sidemenu.style.right = "0";
-}
-
-function closemenu(){
-    sidemenu.style.right = "-200px";
-}
+// -------------------- Created by Michalis Karatsioris -------------------- 

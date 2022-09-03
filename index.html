@@ -1,5 +1,7 @@
 <!DOCTYPE html>
-<!-- Created By CodingNepal -->
+
+<!-- -------------------- Created by Michalis Karatsioris -------------------- -->
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -8,23 +10,28 @@
     <link rel="icon" type="x-icon" href="img/favicon.png">
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/a595256187.js" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js""></script>
 
 </head>
 <body>
+
+    <!-- -------------------- SCROLL-UP-BTN SECTION -------------------- -->
+
     <div class="scroll-up-btn">
         <i class="fas fa-angle-up"></i>
     </div>
+
+    <!-- -------------------- NAVIGATION BAR SECTION -------------------- -->
+
     <nav class="navbar">
         <div class="max-width">
             <img src="img/logo-name.png" alt="Alejandra Mantiñan logo" class="logo">
             <ul class="menu">
-                <li><a href="#home">home</a></li>
-                <li><a href="#about">about</a></li>
-                <li><a href="#schedule">schedule</a></li>
-                <li><a href="#gallery">gallery</a></li>
-                <li><a href="#contact">contact</a></li>
-                <i class="fas fa-xmark" onclick="closemenu()"></i>
+                <li><a href="#home" class="menu-btn">home</a></li>
+                <li><a href="#about" class="menu-btn">about</a></li>
+                <li><a href="#schedule" class="menu-btn">schedule</a></li>
+                <li><a href="#gallery" class="menu-btn">gallery</a></li>
+                <li><a href="#contact" class="menu-btn">contact</a></li>
             </ul>
             <div class="menu-btn">
                 <i class="fas fa-bars"></i>
@@ -32,7 +39,8 @@
         </div>
     </nav>
 
-    <!-- home section start -->
+    <!-- -------------------- HOME SECTION -------------------- -->
+
     <section class="home" id="home">
         <div class="max-width">
             <div class="home-content">
@@ -121,8 +129,10 @@
     <div id="schedule">
         <div class="container">
             <h1 class="sub-title">my schedule</h1>
+            <br>
+            <p id="online">To learn more about my Online Classes, please <a href="#contact">contact</a> me directly. </p>
             <div class="schedule-list">
-                <div>
+                <div class="schedule-card">
                     <h2>January 20<span>23</span></h2>
                     <ul>
                         <li><p>Event Title</p></li>
@@ -138,7 +148,7 @@
                         <li><p>dates</p></li>
                     </ul>
                 </div>
-                <div>
+                <div class="schedule-card">
                     <h2>February 20<span>23</span></h2>
                     <ul>
                         <li><p>Event Title</p></li>
@@ -154,7 +164,7 @@
                         <li><p>dates</p></li>
                     </ul>
                 </div>
-                <div>
+                <div class="schedule-card">
                     <h2>March 20<span>23</span></h2>
                     <ul>
                         <li><p>Event Title</p></li>
@@ -170,7 +180,7 @@
                         <li><p>dates</p></li>
                     </ul>
                 </div>
-                <div>
+                <div class="schedule-card">
                     <h2>April 20<span>23</span></h2>
                     <ul>
                         <li><p>Event Title</p></li>
@@ -188,7 +198,7 @@
                 </div>
             </div>
             <div class="schedule-list">
-                <div>
+                <div class="schedule-card">
                     <h2>May 20<span>23</span></h2>
                     <ul>
                         <li><p>Event Title</p></li>
@@ -204,7 +214,7 @@
                         <li><p>dates</p></li>
                     </ul>
                 </div>
-                <div>
+                <div class="schedule-card">
                     <h2>June 20<span>23</span></h2>
                     <ul>
                         <li><p>Event Title</p></li>
@@ -220,7 +230,7 @@
                         <li><p>dates</p></li>
                     </ul>
                 </div>
-                <div>
+                <div class="schedule-card">
                     <h2>July 20<span>23</span></h2>
                     <ul>
                         <li><p>Event Title</p></li>
@@ -236,7 +246,7 @@
                         <li><p>dates</p></li>
                     </ul>
                 </div>
-                <div>
+                <div class="schedule-card">
                     <h2>August 20<span>23</span></h2>
                     <ul>
                         <li><p>Event Title</p></li>
@@ -254,7 +264,7 @@
                 </div>
             </div>
             <div class="schedule-list">
-                <div>
+                <div class="schedule-card">
                     <h2>September 20<span>23</span></h2>
                     <ul>
                         <li><p>Event Title</p></li>
@@ -270,7 +280,7 @@
                         <li><p>dates</p></li>
                     </ul>
                 </div>
-                <div>
+                <div class="schedule-card">
                     <h2>October 20<span>22</span></h2>
                     <ul>
                         <li><p>Event Title</p></li>
@@ -286,7 +296,7 @@
                         <li><p>dates</p></li>
                     </ul>
                 </div>
-                <div>
+                <div class="schedule-card">
                     <h2>Novemebr 20<span>22</span></h2>
                     <ul>
                         <li><p>Event Title</p></li>
@@ -302,7 +312,7 @@
                         <li><p>dates</p></li>
                     </ul>
                 </div>
-                <div>
+                <div class="schedule-card">
                     <h2>December 20<span>22</span></h2>
                     <ul>
                         <li><p>Event Title</p></li>
@@ -361,9 +371,10 @@
             <h1 class="sub-title">contact me</h1>
             <div class="row">
                 <div class="contact-left">
-                    <p>Follow me and Subscribe in my 
+                    <p>
+                        Follow me and Subscribe in my 
                         <br>
-                        <span id="red">NEW YouTube Channel!</span>
+                        <span id="red">NEW!</span> You<button id="tube" class="btn btn2">Tube</button> Channel
                     </p>
                     <p><i class="fa-solid fa-paper-plane"></i> aleitango@hotmail.com</p>
                     <p><i class="fa-brands fa-whatsapp"></i> +5491163654050</p>
@@ -399,12 +410,20 @@
     <!-- -------------------- FOOTER SECTION -------------------- -->
 
     <footer>
-        <span><span class="far fa-copyright"></span>Alejandra Mantiñan 1990-2022. All rights reserved.
+        <span><span class="far fa-copyright"></span>Alejandra Mantiñan 1991-2022. All rights reserved.
         <br>
         ~ Created with <span class="red"><i class="fas fa-heart"></i> by MorakiMu ~</span>
     </footer>
 
+    <!-- -------------------- LANGUAGES SECTION -------------------- -->
+
+    <div id="languages">
+
+    </div>
 
     <script src="script.js"></script>
 </body>
+
+<!-- -------------------- Created by Michalis Karatsioris -------------------- -->
+
 </html>

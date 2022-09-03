@@ -1,4 +1,8 @@
-/*  import google fonts */
+
+/* -------------------- Created by Michalis Karatsioris -------------------- */
+
+/* -------------------- GOOGLE FONTS -------------------- */
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
 
 *{
@@ -6,13 +10,15 @@
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
+    font-family: 'Ubuntu', sans-serif;
 }
 html{
     scroll-behavior: smooth;
     background: #111
 }
 
-/* custom scroll bar */
+/* -------------------- CUSTOM SCROLL BAR SET UP -------------------- */
+
 ::-webkit-scrollbar {
     width: 10px;
 }
@@ -22,69 +28,17 @@ html{
 ::-webkit-scrollbar-thumb {
     background: #888;
 }
-
 ::-webkit-scrollbar-thumb:hover {
     background: #555;
 }
 
-/* all similar content styling codes */
-section{
-    padding: 100px 0;
-}
-.max-width{
-    max-width: 1300px;
-    padding: 0 80px;
-    margin: auto;
-}
-.about, .services, .skills, .teams, .contact, footer{
-    font-family: 'Poppins', sans-serif;
-}
-.about .about-content,
-.services .serv-content,
-.skills .skills-content,
-.contact .contact-content{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-}
-section .title{
-    position: relative;
-    text-align: center;
-    font-size: 40px;
-    font-weight: 500;
-    margin-bottom: 60px;
-    padding-bottom: 20px;
-    font-family: 'Ubuntu', sans-serif;
-}
-section .title::before{
-    content: "";
-    position: absolute;
-    bottom: 0px;
-    left: 50%;
-    width: 180px;
-    height: 3px;
-    background: #111;
-    transform: translateX(-50%);
-}
-section .title::after{
-    position: absolute;
-    bottom: -8px;
-    left: 50%;
-    font-size: 20px;
-    color: crimson;
-    padding: 0 5px;
-    background: #fff;
-    transform: translateX(-50%);
-}
+/* -------------------- NAVIGATION BAR SET UP -------------------- */
 
-/* navbar styling */
 .navbar{
     position: fixed;
     width: 100%;
     z-index: 999;
     padding: 30px 0;
-    font-family: 'Ubuntu', sans-serif;
     transition: all 0.3s ease;
 }
 .navbar.sticky{
@@ -95,18 +49,6 @@ section .title::after{
     display: flex;
     align-items: center;
     justify-content: space-between;
-}
-.navbar .logo a{
-    color: #fff;
-    font-size: 35px;
-    font-weight: 600;
-}
-.navbar .logo a span{
-    color: crimson;
-    transition: all 0.3s ease;
-}
-.navbar.sticky .logo a span{
-    color: #fff;
 }
 .navbar .menu li{
     list-style: none;
@@ -123,14 +65,9 @@ section .title::after{
 .navbar .menu li a:hover{
     color: crimson;
 }
-.navbar.sticky .menu li a:hover{
-    color: #fff;
-}
-nav .fas{
-    display: none;
-}
 
-/* menu btn styling */
+/* -------------------- MENU BTN SET UP -------------------- */
+
 .menu-btn{
     color: #fff;
     font-size: 23px;
@@ -165,8 +102,16 @@ nav .fas{
     filter: brightness(90%);
 }
 
+/* -------------------- HOME SET UP -------------------- */
 
-/* HOME PAGE STYLING */
+section{
+    padding: 100px 0;
+}
+.max-width{
+    max-width: 1300px;
+    padding: 0 80px;
+    margin: auto;
+}
 .home{
     display: flex;
     height: 100vh;
@@ -174,7 +119,6 @@ nav .fas{
     min-height: 500px;
     background-size: cover;
     background-attachment: fixed;
-    font-family: 'Ubuntu', sans-serif;
 }
 .home .max-width{
   width: 100%;
@@ -193,10 +137,10 @@ video{
   opacity: 0.8;
 }
 
-/* -------------------- ABOUT SECTION SET UP -------------------- */
+/* -------------------- ABOUT SET UP -------------------- */
 
 #about{
-    padding: 100px;
+    padding: 200px;
     background: url("img/satin-black.png") no-repeat center;
     background-size: cover;
     background-attachment: fixed;
@@ -278,14 +222,22 @@ video{
     color: #fff;
 }
 
-/* -------------------- SCHEDULE SECTION SET UP -------------------- */
+/* -------------------- SCHEDULE SET UP -------------------- */
 
 #schedule{
-    padding: 100px;
+    padding: 200px;
     background: url("img/satin-black.png") no-repeat center;
     background-size: cover;
     background-attachment: fixed;
     color: #fff;
+}
+#online{
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
+}
+#online a{
+    color: crimson;
 }
 .schedule-list{
     display: grid;
@@ -302,6 +254,9 @@ video{
     border-radius: 30px;
     transition: all 0.5s ease;
 }
+.schedule-card ul li{
+    list-style: none;
+}
 /* title styling */
 .schedule-list div h2{
     font-size: 30px;
@@ -317,10 +272,10 @@ video{
     transform: translateY(-10px);
 }
 
-/* -------------------- GALLERY SECTION SET UP -------------------- */
+/* -------------------- GALLERY SET UP -------------------- */
 
 #gallery{
-    padding: 100px;
+    padding: 200px;
     background: url("img/satin-black.png") no-repeat center;
     background-size: cover;
     background-attachment: fixed;
@@ -384,7 +339,7 @@ video{
     height: 100%;
 }
 
-/* -------------------- CONTACT SECTION SET UP -------------------- */
+/* -------------------- CONTACT SET UP -------------------- */
 
 #contact{
     padding: 100px;
@@ -417,7 +372,12 @@ video{
 }
 #red{
     color: crimson;
-    text-decoration: underline;
+}
+#tube{
+    padding: 3px;
+    border: solid #fff 1px;
+    border-radius: 10px;
+    margin-left: 2px;
 }
 .social-icons{
     margin-top: 30px;
@@ -480,14 +440,8 @@ form input,
 form textarea{
     margin: 5px;
 }
-#msg{
-    color: #61b752;
-    margin-top: 10px;
-    display: block;
-}
 
-
-/* -------------------- FOOTER SECTION SET UP -------------------- */
+/* -------------------- FOOTER SET UP -------------------- */
 
 footer{
     background: url("img/satin-black.png") no-repeat center;
@@ -496,34 +450,23 @@ footer{
     color: #fff;
     width: 100%;
     text-align: center;
-    padding: 25px 0;
-    background: #262626;
+    padding: 20px 0;
+    background: #111;
     font-size: 17px;
     font-weight: 600;
-    margin-top: 30px;
+    margin-top: 5px;
 }
 footer i{
     color: crimson;
 }
 
-/* responsive media query start */
-@media (max-width: 1104px) {
-    .about .about-content .left img{
-        height: 350px;
-        width: 350px;
-    }
-    .contact-left,
-    .contact-right{
-        text-align: center;
-        padding-left: 100px;
-        padding-right: 100px;
-    }
-}
+/* -------------------- RESPONSIVE MEDIA QUERY SET UP -------------------- */
 
-@media (max-width: 991px) {
+@media (max-width: 1200px) {
     .max-width{
         padding: 0 50px;
-    }.menu-btn{
+    }
+    .menu-btn{
         display: block;
         z-index: 999;
     }
@@ -539,7 +482,7 @@ footer i{
         background: #111;
         text-align: center;
         padding-top: 80px;
-        transition: all 0.3s ease;
+        transition: all 0.7s ease;
     }
     .navbar .menu.active{
         left: 0;
@@ -551,12 +494,6 @@ footer i{
         display: inline-block;
         margin: 20px 0;
         font-size: 25px;
-    }
-    .home .home-content .text-2{
-        font-size: 70px;
-    }
-    .home .home-content .text-3{
-        font-size: 35px;
     }
     .home .home-content a{
         font-size: 23px;
@@ -583,20 +520,21 @@ footer i{
         padding-left: 100px;
         padding-right: 100px;
     }
-}
-@media (max-width: 947px){
-    
+    .about .about-content .left img{
+        height: 350px;
+        width: 350px;
+    }
+    .contact-left,
+    .contact-right{
+        text-align: center;
+        padding-left: 100px;
+        padding-right: 100px;
+    }
 }
 
 @media (max-width: 800px) {
     .max-width{
         padding: 0 23px;
-    }
-    .home .home-content .text-2{
-        font-size: 60px;
-    }
-    .home .home-content .text-3{
-        font-size: 32px;
     }
     .home .home-content a{
         font-size: 20px;
@@ -604,12 +542,6 @@ footer i{
 }
 
 @media (max-width: 600px) {
-    .home .home-content .text-2{
-        font-size: 50px;
-    }
-    .home .home-content .text-3{
-        font-size: 27px;
-    }
     nav .logo{
         width: 200px;
         height: 40px;
@@ -617,17 +549,6 @@ footer i{
     nav .fas{
         display: block;
         font-size: 20px;
-    }
-    nav ul{
-        background: crimson;
-        position: fixed;
-        top: 0;
-        right: -200px;
-        width: 200px;
-        height: 100vh;
-        padding-top: 50px;
-        z-index: 2;
-        transition: all 0.7s ease;
     }
     nav ul li{
         display: block;
@@ -669,3 +590,5 @@ footer i{
         line-height: 38px;
     }
 }
+
+/* -------------------- Created by Michalis Karatsioris -------------------- */
