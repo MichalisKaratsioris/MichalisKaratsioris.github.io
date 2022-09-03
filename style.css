@@ -126,6 +126,9 @@ section .title::after{
 .navbar.sticky .menu li a:hover{
     color: #fff;
 }
+nav .fas{
+    display: none;
+}
 
 /* menu btn styling */
 .menu-btn{
@@ -482,6 +485,7 @@ form textarea{
     margin-top: 10px;
     display: block;
 }
+
 
 /* -------------------- FOOTER SECTION SET UP -------------------- */
 
