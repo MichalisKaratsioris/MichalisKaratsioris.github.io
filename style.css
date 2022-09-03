@@ -160,6 +160,7 @@ video{
 }
 .about-column-right{
     flex-basis: 60%;
+    text-align: justify;
 }
 .sub-title{
     font-size: 60px;
@@ -464,7 +465,7 @@ footer i{
 
 @media (max-width: 1200px) {
     .max-width{
-        padding: 0 50px;
+        padding: 0 100px;
     }
     .menu-btn{
         display: block;
@@ -494,10 +495,6 @@ footer i{
         display: inline-block;
         margin: 20px 0;
         font-size: 25px;
-    }
-    .home .home-content a{
-        font-size: 23px;
-        padding: 10px 30px;
     }
     .max-width{
         max-width: 930px;
@@ -532,37 +529,80 @@ footer i{
     }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1000px) {
     .max-width{
-        padding: 0 23px;
+        padding: 0 75px;
     }
-    .home .home-content a{
-        font-size: 20px;
+    #about,
+    #schedule,
+    #gallery{
+        padding-left: 70px;
+        padding-right: 70px;
+    }
+    .about .about-content .left img{
+        height: 350px;
+        width: 350px;
+    }
+    .about .about-content .column{
+        width: 100%;
+    }
+    .about .about-content .left{
+        display: flex;
+        justify-content: center;
+        margin: 0 auto 60px;
+    }
+    .about .about-content .right{
+        flex: 100%;
+    }
+    .contact-left{
+        padding-bottom: 50px;
+    }
+    .contact-left,
+    .contact-right{
+        flex-basis: 100%;
+        text-align: center;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    footer{
+        font-size: 15px;
     }
 }
 
-@media (max-width: 600px) {
-    nav .logo{
-        width: 200px;
-        height: 40px;
+@media (max-width: 800px) {
+    .max-width{
+        padding: 0 50px;
     }
-    nav .fas{
+    .navbar .logo{
+        width: 300px;
+    }
+    .sub-title{
+        font-size: 50px;
+    }
+}
+
+@media (max-width: 500px) {
+    .navbar .logo{
+        width: 200px;
+        height: 35px;
+    }
+    .navbar .fas{
         display: block;
         font-size: 20px;
     }
-    nav ul li{
+    .navbar ul li{
         display: block;
         margin: 25px;
         font-weight: 600;
     }
-    nav ul .fas{
+    .navbar ul .fas{
         position: absolute;
         top: 25px;
         left: 25px;
         cursor: pointer;
     }
     .sub-title{
-        font-size: 40px;
+        font-size: 30px;
     }
     .about-column-left,
     .about-column-right{
@@ -570,6 +610,12 @@ footer i{
     }
     .about-column-left{
         margin-bottom: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .about-column-left img{
+        width: 150px;
     }
     .about-column-right{
         font-size: 15px;
@@ -578,8 +624,11 @@ footer i{
         font-size: 20px;
         margin-right: 20px;
     }
+    #contact{
+        padding: 10px;
+    }
     footer{
-        font-size: 12px;
+        font-size: 10px;
     }
     .scroll-up-btn{
         right: 15px;
