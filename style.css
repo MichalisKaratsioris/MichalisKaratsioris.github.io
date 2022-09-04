@@ -126,6 +126,10 @@ html{
     background: url("img/ru-c.svg") no-repeat center;
     margin-top: 20px;
 }
+#cn:before{
+    background: url("img/cn-c.svg") no-repeat center;
+    margin-top: 20px;
+}
 
 /* -------------------- MENU BTN SET UP -------------------- */
 
