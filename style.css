@@ -364,8 +364,12 @@ video{
 }
 .contact-left{
     flex-basis: 35%;
+    display: block;
+    text-align: center;
+    justify-content: space-between;
     padding-left: 100px;
     padding-right: 50px;
+    padding-bottom: 50px;
 }
 .contact-right{
     flex-basis: 60%;
