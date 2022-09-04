@@ -1,9 +1,10 @@
 
 /* -------------------- Created by Michalis Karatsioris -------------------- */
 
-/* -------------------- GOOGLE FONTS -------------------- */
+/* -------------------- GOOGLE FONTS & NORMALIZE-------------------- */
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+@import url('https://necolas.github.io/normalize.css/8.0.1/normalize.css');
 
 *{
     margin: 0;
@@ -64,6 +65,61 @@ html{
 }
 .navbar .menu li a:hover{
     color: crimson;
+}
+.lang-menu{
+    position: relative;
+}
+.selected-lang{
+    cursor: pointer;
+    color: #fff;
+    width: 100px;
+}
+.selected-lang:before{
+    content: '';
+    display: block;
+    width: 30px;
+    height: 30px;
+    background: url("img/us-c.svg") no-repeat center;
+}
+.lang-menu ul{
+    width: 35px;
+    background: none;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+    border-radius: 10px;
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
+}
+.lang-menu:hover ul{
+    display: block;
+}
+.lang-menu ul li{
+    list-style: none;
+}
+.lang-menu ul li a{
+    width: 35px;
+    display: block;
+    border-radius: 10px;
+}
+.lang-menu ul li a:before{
+    content: '';
+    display: block;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    background: url("img/us-c.svg") no-repeat center;
+}
+#eng:before{
+    background: url("img/us-c.svg") no-repeat center;
+}
+#es:before{
+    background: url("img/es-c.svg") no-repeat center;
+    padding: 20px 0;
+}
+#it:before{
+    background: url("img/it-c.svg") no-repeat center;
 }
 
 /* -------------------- MENU BTN SET UP -------------------- */
