@@ -242,12 +242,13 @@ video{
     color:#fff;
 }
 .schedule .title{
+    font-size: 60px;
+    font-weight: 600;
+    color: crimson;
     position: relative;
     text-align: center;
-    font-size: 40px;
-    font-weight: 500;
-    margin-bottom: 60px;
-    padding-bottom: 20px;
+    margin-bottom: 50px;
+    color: crimson;
     font-family: 'Ubuntu', sans-serif;
 }
 #online{
@@ -270,6 +271,9 @@ video{
 }
 .schedule .carousel .card:hover{
     background: crimson;
+}
+.schedule .carousel .card:hover .year{
+    color: #fff;
 }
 .schedule .carousel .card .box{
     display: flex;
