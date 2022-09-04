@@ -116,10 +116,15 @@ html{
 }
 #es:before{
     background: url("img/es-c.svg") no-repeat center;
-    padding: 20px 0;
+    margin-top: 20px;
 }
 #it:before{
     background: url("img/it-c.svg") no-repeat center;
+    margin-top: 20px;
+}
+#ru:before{
+    background: url("img/ru-c.svg") no-repeat center;
+    margin-top: 20px;
 }
 
 /* -------------------- MENU BTN SET UP -------------------- */
