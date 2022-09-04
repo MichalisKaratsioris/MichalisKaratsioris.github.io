@@ -141,26 +141,30 @@ video{
 
 #about{
     padding: 200px;
+    padding-top: 120px;
+    padding-bottom: 50px;
     background: url("img/satin-black.png") no-repeat center;
     background-size: cover;
     background-attachment: fixed;
+    text-align: justify;
     color: #fff;
 }
-.row{
+.about-photo{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 }
-.about-column-left{
+.about-photo img{
     flex-basis: 35%;
-}
-.about-column-left img{
-    width: 100%;
+    width: 30%;
     border-radius: 50%;
 }
-.about-column-right{
-    flex-basis: 60%;
-    text-align: justify;
+.about-photo p{
+    flex-basis: 65%;
+    padding-left: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .sub-title{
     font-size: 60px;
@@ -181,7 +185,9 @@ video{
 }
 .tab-titles{
     display: flex;
-    margin: 20px 0 40px;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 50% 40px;
 }
 .tab-categories{
     margin-right: 50px;
@@ -207,8 +213,11 @@ video{
     width: 100%;
 }
 .tab-contents{
-    margin: 10px 0;
+    margin: 0;
     font-size: 15px;
+}
+#articles{
+    padding-bottom: 270px;
 }
 #articles ul li{
     list-style-type: circle;
@@ -227,6 +236,7 @@ video{
 
 #schedule{
     padding: 200px;
+    padding-top: 120px;
     background: url("img/satin-black.png") no-repeat center;
     background-size: cover;
     background-attachment: fixed;
@@ -277,6 +287,8 @@ video{
 
 #gallery{
     padding: 200px;
+    padding-top: 120px;
+    padding-bottom: 100px;
     background: url("img/satin-black.png") no-repeat center;
     background-size: cover;
     background-attachment: fixed;
@@ -347,6 +359,7 @@ video{
     background: url("img/satin-black.png") no-repeat center;
     background-size: cover;
     background-attachment: fixed;
+    text-align: justify;
     color: #fff;
 }
 .contact-left{
@@ -463,6 +476,24 @@ footer i{
 
 /* -------------------- RESPONSIVE MEDIA QUERY SET UP -------------------- */
 
+@media (max-width: 1550px) {
+    .schedule-list{
+        grid-template-columns: repeat(auto-fit, minmax(400px,1fr));
+    }
+}
+
+@media (max-width: 1250px) {
+    .schedule-list{
+        grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+    }
+}
+
+@media (max-width: 1230px) {
+    .gallery-list{
+        grid-template-columns: repeat(auto-fit, minmax(150px,1fr));
+    }
+}
+
 @media (max-width: 1200px) {
     .max-width{
         padding: 0 100px;
@@ -510,6 +541,18 @@ footer i{
     .about .about-content .right{
         flex: 100%;
     }
+    .schedule-list{
+        grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    }
+    .schedule-list div{
+        padding: 30px;
+    }
+    .schedule-list div h2{
+        font-size: 25px;
+    }
+    .contact-left{
+        padding-bottom: 50px;
+    }
     .contact-left,
     .contact-right{
         flex-basis: 100%;
@@ -554,6 +597,12 @@ footer i{
     .about .about-content .right{
         flex: 100%;
     }
+    .schedule-list{
+        grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+    }
+    #contact{
+        padding: 10px;
+    }
     .contact-left{
         padding-bottom: 50px;
     }
@@ -561,8 +610,6 @@ footer i{
     .contact-right{
         flex-basis: 100%;
         text-align: center;
-        padding-left: 0px;
-        padding-right: 0px;
     }
     footer{
         font-size: 15px;
@@ -571,13 +618,30 @@ footer i{
 
 @media (max-width: 800px) {
     .max-width{
-        padding: 0 50px;
+        padding: 0 70px;
     }
     .navbar .logo{
         width: 300px;
     }
+    .about-photo{
+        display: block;
+        margin: auto;
+    }
+    .about-photo img{
+        width: 70%;
+        display: block;
+        margin: auto;
+        padding-bottom: 50px;
+    }
+    .gallery-list{
+        grid-template-columns: repeat(auto-fit, minmax(350px,1fr));
+    }
     .sub-title{
         font-size: 50px;
+    }
+    .contact-left,
+    .contact-right{
+        padding: 20px;
     }
 }
 
@@ -624,6 +688,9 @@ footer i{
         font-size: 20px;
         margin-right: 20px;
     }
+    .gallery-list{
+        grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+    }
     #contact{
         padding: 10px;
     }
@@ -639,5 +706,17 @@ footer i{
         line-height: 38px;
     }
 }
+
+@media (max-width: 400px) {
+    .max-width{
+        padding: 0 30px;
+    }
+    #schedule{
+        flex-basis: 100%;
+        display: flex;
+        justify-content: center;
+    }
+}
+
 
 /* -------------------- Created by Michalis Karatsioris -------------------- */
