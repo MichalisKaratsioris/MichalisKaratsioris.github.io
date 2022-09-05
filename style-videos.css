@@ -194,6 +194,7 @@ html{
 iframe{
     height: 281px;
     width: 500px;
+    overflow: hidden;
     object-fit: cover;
     border: solid 1px crimson;
     border-radius: 3%;
