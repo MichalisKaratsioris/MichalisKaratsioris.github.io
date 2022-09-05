@@ -43,17 +43,17 @@ $(document).ready(function(){
         autoplayTimeOut: 2000,
         autoplayHoverPause: true,
         responsive: {
-            0:{
-                items: 1,
-                nav: false
-            },
-            600:{
-                items: 2,
-                nav: false
-            },
-            1000:{
+            // 1000:{
+            //     items: 1,
+            //     nav: false
+            // },
+            // 5000:{
+            //     items: 2,
+            //     nav: false
+            // },
+            100000:{
                 items: 3,
-                nav: false
+                nav: true
             }
         }
     });
@@ -73,5 +73,24 @@ function opentab(tabname){
     event.currentTarget.classList.add("active-category");
     document.getElementById(tabname).classList.add("active-tab");
 }
+
+// Gallery - Photos
+$('.carousel').flipster({
+    style:'carousel',
+    spacing: -0.4,
+});
+
+// Gallery - Videos
+var video = document.querySelectorAll('video');
+video.forEach(play => play.addEventListener('click', () => {
+    play.classList.toggle('active');
+
+    if (play.paused) {
+        play.play;
+    }else{
+        play.pause();
+        play.currentTime = 0;
+    }
+}));
 
 // -------------------- Created by Michalis Karatsioris -------------------- 

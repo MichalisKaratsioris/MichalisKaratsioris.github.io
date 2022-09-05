@@ -15,7 +15,7 @@
 }
 html{
     scroll-behavior: smooth;
-    background: #111
+    background: #111;
 }
 
 /* -------------------- CUSTOM SCROLL BAR SET UP -------------------- */
@@ -574,10 +574,8 @@ footer{
     width: 100%;
     text-align: center;
     padding: 20px 0;
-    background: #111;
     font-size: 17px;
     font-weight: 600;
-    margin-top: 5px;
 }
 footer i{
     color: crimson;
