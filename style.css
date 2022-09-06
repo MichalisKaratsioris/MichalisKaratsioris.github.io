@@ -326,6 +326,7 @@ video{
 }
 .schedule .carousel .card{
     background: #222;
+    /* background: none; */
     border: solid 1px crimson;
     border-radius: 50px;
     padding: 25px 35px;
@@ -355,6 +356,7 @@ video{
     margin: 10px 0 7px 0;
 }
 .schedule .carousel .card img{
+    background: none;
     height: 150px;
     width: 150px;
     object-fit: cover;
