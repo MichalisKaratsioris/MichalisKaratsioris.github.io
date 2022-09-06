@@ -18,7 +18,7 @@ html{
     background: #111;
 }
 .max-width{
-    max-width: 1300px;
+    max-width: 1600px;
     padding: 0 10px;
     margin: auto;
 }
@@ -73,10 +73,11 @@ html{
     color: crimson;
 }
 .lang{
-    margin-left: 0;
+    margin-left: 0px;
 }
 .lang-menu{
     position: relative;
+    padding: 30px;
 }
 .selected-lang{
     cursor: pointer;
@@ -86,31 +87,26 @@ html{
 .selected-lang:before{
     content: '';
     display: block;
-    width: 30px;
-    height: 30px;
-    background: url("img/us-c.svg") no-repeat center;
+    width: 20px;
+    height: 20px;
 }
 .lang-menu ul{
-    width: 35px;
+    width: 80px;
     background: none;
-    box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
-    border-radius: 10px;
     display: none;
     position: absolute;
-    top: 0;
+    top: 80px;
     left: 0;
     margin: 0;
 }
 .lang-menu:hover ul{
-    display: block;
+    display: inline-block;
 }
 .lang-menu ul li{
     list-style: none;
 }
 .lang-menu ul li a{
-    width: 35px;
     display: block;
-    border-radius: 10px;
 }
 .lang-menu ul li a:before{
     content: '';
@@ -118,7 +114,6 @@ html{
     border-radius: 50%;
     width: 30px;
     height: 30px;
-    background: url("img/us-c.svg") no-repeat center;
 }
 #eng:before{
     background: url("img/us-c.svg") no-repeat center;
@@ -607,10 +602,13 @@ footer i{
 
 @media (max-width: 1200px) {
     .max-width{
-        padding: 0 100px;
+        padding: 0 50px;
+        max-width: 1200px;
     }
     .menu-btn{
-        display: block;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         z-index: 999;
     }
     .menu-btn i.active:before{
@@ -633,13 +631,26 @@ footer i{
     .navbar .menu li{
         display: block;
     }
-    .navbar .menu li a{
+    .navbar .menu li a,
+    .navbar .menu .lang-menu{
         display: inline-block;
         margin: 20px 0;
         font-size: 25px;
     }
-    .max-width{
-        max-width: 930px;
+    .lang-menu{
+        position: relative;
+    }
+    .lang-menu:hover ul{
+        position: absolute;
+        height: 100vh;
+        width: 100%;
+        top: 35%;
+        display: flex;
+        align-items: baseline;
+        justify-content: center;
+    }
+    .navbar .menu .lang-menu ul li{
+        padding: 10px;
     }
     .about .about-content .column{
         width: 100%;
@@ -685,7 +696,8 @@ footer i{
 
 @media (max-width: 1000px) {
     .max-width{
-        padding: 0 75px;
+        padding: 0 40px;
+        max-width: 1000px;
     }
     #about,
     #schedule,
@@ -729,7 +741,7 @@ footer i{
 
 @media (max-width: 800px) {
     .max-width{
-        padding: 0 70px;
+        max-width: 800px;
     }
     .navbar .logo{
         width: 300px;
@@ -757,6 +769,9 @@ footer i{
 }
 
 @media (max-width: 500px) {
+    .max-width{
+        max-width: 500px;
+    }
     .navbar .logo{
         width: 200px;
         height: 35px;
@@ -775,6 +790,9 @@ footer i{
         top: 25px;
         left: 25px;
         cursor: pointer;
+    }
+    .navbar .menu .lang-menu ul li{
+        padding: 0;
     }
     .sub-title{
         font-size: 30px;
@@ -820,12 +838,29 @@ footer i{
 
 @media (max-width: 400px) {
     .max-width{
-        padding: 0 30px;
+        max-width: 400px;
+    }
+    .navbar .menu{
+        position: fixed;
+        height: 100%;
+        width: 100%;
+        left: -100%;
+        top: 0;
+        background: #111;
+        text-align: center;
+        padding-top: 80px;
+        transition: all 0.7s ease;
     }
     #schedule{
         flex-basis: 100%;
         display: flex;
         justify-content: center;
+    }
+    video{
+      width: 100%;
+      height: 100vh;
+      object-fit: cover;
+      opacity: 0.8;
     }
 }
 
