@@ -350,6 +350,9 @@ video{
 .schedule .carousel .card:hover .box{
     transform: scale(1.05);
 }
+.schedule .carousel .card .box p{
+    font-size: 20px;
+}
 .schedule .carousel .card .text{
     font-size: 25px;
     font-weight: 500;
