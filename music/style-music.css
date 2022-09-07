@@ -171,11 +171,12 @@ html{
     filter: brightness(90%);
 }
 
-/* -------------------- SCHEDULE SET UP -------------------- */
-
 /* -------------------- MUSIC PLAYER SET UP -------------------- */
 
 #music-player{
+    background: url("../img/satin-black.png") no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -407,7 +408,9 @@ ul li .audio-duration{
 /* -------------------- FOOTER SET UP -------------------- */
 
 footer{
-    background: #111;
+    background: url("../img/satin-black.png") no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
     background-size: cover;
     background-attachment: fixed;
     color: #fff;

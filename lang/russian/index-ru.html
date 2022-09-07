@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+
+<!-- -------------------- Created by Michalis Karatsioris -------------------- -->
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alejandra Mantiñan</title>
+    <link rel="icon" type="x-icon" href="img/favicon.png">
+    <link rel="stylesheet" href="style-ru.css">
+    <script src="https://kit.fontawesome.com/a595256187.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js""></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
+</head>
+<body>
+
+    <!-- -------------------- SCROLL-UP-BTN SECTION -------------------- -->
+
+    <div class="scroll-up-btn">
+        <i class="fas fa-angle-up"></i>
+    </div>
+
+    <!-- -------------------- NAVIGATION BAR SECTION -------------------- -->
+
+    <nav class="navbar">
+        <div class="max-width">
+            <img src="img/logo-name.png" alt="Alejandra Mantiñan logo" class="logo">
+            <ul class="menu">
+                    <li><a href="#home" class="menu-btn">дом</a></li>
+                    <li><a href="#about" class="menu-btn">насчет</a></li>
+                    <li><a href="#schedule" class="menu-btn">программа</a></li>
+                    <li><a href="#gallery" class="menu-btn">галерея</a></li>
+                    <li><a href="#contact" class="menu-btn">контакт</a></li>
+                <li>
+                    <div class="lang">
+                        <div class="lang-menu">
+                            <div class="selected-lang">
+                                <i class="fa-solid fa-language"></i>
+                            </div>
+                            <ul>
+                                <li><a id="ru" href="ru.html"></a></li>
+                                <li><a id="eng" href="index.html"></a></li>
+                                <li><a id="es" href="es.html"></a></li>
+                                <li><a id="it" href="it.html"></a></li>
+                                <li><a id="cn" href="cn.html"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <div class="menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- -------------------- HOME SECTION -------------------- -->
+
+    <section class="home" id="home">
+        <div class="max-width">
+            <div class="home-content">
+                <video autoplay muted loop src="gallery/videos/Pavadita.mp4"></video>
+            </div>
+        </div>
+    </section>
+    
+    <!-- -------------------- ABOUT SECTION -------------------- -->
+
+    <div id="about">
+        <div class="container">
+            <h1 class="sub-title">обо мне</h1>
+            <div class="about-photo">
+                <img src="gallery/photos/am05.jpg" alt="Alejandra with Gustavo photo">
+                <p>
+                    Лицо и имя, связанные во всем мире с аргентинским танго. Алехандра Мантиньян
+                     был погружен в танго за последние 40 лет. Обычно считается, что она была пионером
+                     в создании высочайшего совершенства в исполнении женской роли в танго. Алехандра — одна из
+                     женщины, которые установили стандарты не только в своих танцах, но и в своих интенсивных исследованиях
+                     и методы обучения. Она принимала участие почти во всех важных фестивалях в мире. В соответствии
+                     в обзоре самого популярного журнала о танго "The Tangueta", Алехандра Мантиньян является
+                     женщина из "Los piez milagrosos" (чудесные ноги) и самая номинированная танцовщица среди участников.
+                     чемпионата мира по танго.
+                </p>
+                <br>
+                <br>
+            </div>
+            <div class="row">
+                <div class="about-column-right">
+                    <div class="tab-titles">
+                        <p class="tab-categories active-category" onclick="opentab('bio')">Био</p>
+                        <p class="tab-categories" onclick="opentab('amt')">ATM</p>
+                        <p class="tab-categories" onclick="opentab('articles')">Статьи</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="bio">
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            Она начала танцевать в возрасте 8 лет в <em>Escuela Nacional.
+                                de Danza</em>, где через 10 лет она получила диплом "Maestra Nacional de Danza", а
+                                в 17 лет она поступила в «Ballet de Danza Contemporanea» лаборатории Соледад Фернандес.
+                                в театре Сан-Мартин. В 1988 году, параллельно с артистической карьерой, начала заниматься
+                                в медицинском университете (УБА), где регулярно посещала курсы по специальности
+                                травматология и реабилитация, а также приобретение специальных ноу-хау в моторике,
+                                теперь неотъемлемая часть ее метода обучения ATM с упором на биомеханику. Ее новаторская педагогическая
+                                метод ATM может быть использован в любом стиле, Tango Salon, Milonguero или более новых тенденциях
+                                развивающийся танец танго.
+                        </p>
+                        <br>
+                        <br>
+                        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+                            Она брала уроки в основном у Минго и Эстер Пульезе и Антонио Тодаро.
+                             (один из самых творческих танцоров танго, который любил изобретать длинные, острые и сложные последовательности кричащих
+                             шаги до сих пор можно увидеть у многих известных профессиональных танцоров танго), для которых она в конечном итоге стала его
+                             помощник на пять лет. Именно тогда она начала углубляться в секреты танго и
+                             его стиль вдохновил ее на разработку техники танго. Помимо Тодаро, наиболее
+                             Важная информация для женщин поступила от Эстер Пульезе и Марихо Альварес, которые являются единственными
+                             учителей-женщин, которых она считает точкой отсчета в своей карьере, и полностью изменили ее
+                             точки зрения на пару. Первый касается линии танго, а второй — биомеханической части.
+                        </p>
+                        <br>
+                        <br>
+                        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+                            В течение 8 лет вместе с Густаво Руссо были прима-балеринами
+                            шоу «Tango Pasión», охватывающее 340 городов мира, выступая в самых важных и
+                            престижные театры, такие как Сикстинский театр в Риме, Бродвейский театр в Нью-Йорке, Театр Колон в
+                            Буэнос-Айрес, Театр Елисейских Элизе в Париже, Театр Кремлино в Москве, Санкт-Петербургская Опера, Театр Монако,
+                            Берлинский филармонический оркестр, и это лишь некоторые из них. Она получила восторженные отзывы по всему миру и была отмечена особым упоминанием.
+                            New York Times на бродвейской премьере «Tango Pasión». Ей выпала честь выступать с живым
+                            оркестры Освальдо Пульезе, Орасио Салгана, Мариано Мореса, Хосе Бассо и Секстето Майора. Другие известные
+                            танго-шоу, в которых участвовала Алехандра, были "Tango Danza", "Tango X2", "A night of Tango" и
+                            «Танго соблазнения». Алехандра также была главным судьей конкурса Tango Mundial, а также многих
+                            другие соревнования со всего мира, такие как чемпионат Азии по танго и чемпионат Европы по танго.
+                        </p>
+                        <br>
+                        <br>
+                        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+                            До сегодняшнего дня она имела удовольствие делить танцпол с некоторыми из
+                             самые влиятельные и вдохновляющие танцоры танго, такие как Хуан Карлос Копес, Освальдо Зотто, Пабло Верон,
+                             Мариано «Чичо» Фрумболи, Габриэль Миссе, Леандро Оливер, Мартин Охеда, Орасио Годой, Фабиан Салас,
+                             Мариано Отеро, Гильермо Сальват, Омар Окампо, Хуан Корвалан, Гаспар Годой, Панчо Мартинес Пай и
+                             Аоникен Кирога, с которым она участвовала в большинстве международных фестивалей с 2008 года.
+                        </p>
+                        <br>
+                        <br>
+                    </div>
+                    <div class="tab-contents" id="amt">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur 
+                            asperiores voluptatibus aut maiores eius tempora impedit nobis optio 
+                            ipsam commodi?
+                        </p>
+                    </div>
+                    <div class="tab-contents" id="articles">
+                        <ul>
+                            <li>
+                                <a href="https://www.ultimatetango.com/blog/alejandra-mantinan-controversial-tango-legend" target="_blank">Alejandra Mantiñan: Controversial Legend of Argentine Tango</a>
+                            </li>
+                            <br>
+                            <li>
+                                <a href="https://tangofashionnews.com.ar/alejandra-mantinan-a-tango-dancing-angel/" target="_blank">Alejandra Mantiñan. A Tango dancing Angel</a>
+                            </li>
+                            <br>
+                            <li>
+                                <a href="https://www.tango-space.com/alejandra-mantinans-advice-readers/" target="_blank">Alejandra Mantiñan's advice in Tango Classes in London</a>
+                            </li>
+                            <br>
+                            <li>
+                                <a href="https://tangochamps.com/actor/alejandra-mantinan-judge/" target="_blank">Alejandra Mantiñan in TangoChamps</a>
+                            </li>
+                            <br>
+                            <li>
+                                <a href="https://milonguerosallaboard.com/alejandra-martinan-gustavo-russo/" target="_blank">Interview with Gustavo Russo and Alejandra Mantiñan</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- -------------------- SCHEDULE SECTION -------------------- -->
+   
+    <section class="schedule" id="schedule">
+        <div class="max-width">
+            <h2 class="title">мое программа</h2>
+            <br>
+            <p id="online">
+                Чтобы узнать о моих текущих онлайн-классах, пожалуйста,
+                <a href="#contact">свяжитесь со мной</a> напрямую.
+            </p>
+            <br>
+            <br>
+            <div class="carousel owl-carousel">
+                <div class="card">
+                    <div class="box">
+                        <img src="img/january.jpg" alt="">
+                        <br>
+                        <div class="text">20<span class="year">23</span></div>
+                        <br>
+                        <p>Event</p>
+                        <p>Event</p>
+                        <p>Event</p>
+                        <p>Event</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <img src="img/february.jpg" alt="">
+                        <br>
+                        <div class="text">20<span class="year">23</span></div>
+                        <br>
+                        <p>Event</p>
+                        <p>Event</p>
+                        <p>Event</p>
+                        <p>Event</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <img src="img/march.jpg" alt="">
+                        <br>
+                        <div class="text">20<span class="year">23</span></div>
+                        <br>
+                        <p>Event</p>
+                        <p>Event</p>
+                        <p>Event</p>
+                        <p>Event</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <img src="img/april.png" alt="">
+                        <br>
+                        <div class="text">20<span class="year">23</span></div>
+                        <br>
+                        <p>Event</p>
+                        <p>Event</p>
+                        <p>Event</p>
+                        <p>Event</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <img src="img/may.jpg" alt="">
+                        <br>
+                        <div class="text">20<span class="year">23</span></div>
+                        <br>
+                        <p>Event</p>
+                        <p>Event</p>
+                        <p>Event</p>
+                        <p>Event</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <img src="img/june.jpg" alt="">
+                        <br>
+                        <div class="text">20<span class="year">23</span></div>
+                        <br>
+                        <p>Event</p>
+                        <p>Event</p>
+                        <p>Event</p>
+                        <p>Event</p>
+                    </div>
+                </div><div class="card">
+                    <div class="box">
+                        <img src="img/july.jpg" alt="">
+                        <br>
+                        <div class="text">20<span class="year">23</span></div>
+                        <br>
+                        <p>Event</p>
+                        <p>Event</p>
+                        <p>Event</p>
+                        <p>Event</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <img src="img/august.jpg" alt="">
+                        <br>
+                        <div class="text">20<span class="year">23</span></div>
+                        <br>
+                        <p>Event</p>
+                        <p>Event</p>
+                        <p>Event</p>
+                        <p>Event</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <img src="img/september.jpg" alt="">
+                        <br>
+                        <div class="text">20<span class="year">23</span></div>
+                        <br>
+                        <p>Event</p>
+                        <p>Event</p>
+                        <p>Event</p>
+                        <p>Event</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <img src="img/october.jpg" alt="">
+                        <br>
+                        <div class="text">20<span class="year">23</span></div>
+                        <br>
+                        <p>Event</p>
+                        <p>Event</p>
+                        <p>Event</p>
+                        <p>Event</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <img src="img/november.jpg" alt="">
+                        <br>
+                        <div class="text">20<span class="year">23</span></div>
+                        <br>
+                        <p>Event</p>
+                        <p>Event</p>
+                        <p>Event</p>
+                        <p>Event</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <img src="img/december.jpg" alt="">
+                        <br>
+                        <div class="text">20<span class="year">23</span></div>
+                        <br>
+                        <p>Event</p>
+                        <p>Event</p>
+                        <p>Event</p>
+                        <p>Event</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- -------------------- GALLERY SECTION -------------------- -->
+
+    <div id="gallery">
+        <div class="container">
+            <div class="sub-title">моя галерея</div>
+            <div class="gallery-list">
+                <div class="gallery-card">
+                    <img src="gallery/photos/am12.jpg" alt="Alejandra and Shiushin">
+                    <div class="layer-card">
+                        <h3>Фото</h3>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="gallery-card">
+                    <img src="gallery/photos/am05.jpg" alt="Alejandra and Gustavo in Tango Pasion">
+                    <div class="layer-card">
+                        <h3>Видео</h3>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="gallery-card">
+                    <img src="gallery/photos/am08.jpg" alt="Alejandra in Bubai desert">
+                    <div class="layer-card">
+                        <h3>Музыка!</h3>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- -------------------- CONTACT SECTION -------------------- -->
+
+    <div id="contact">
+        <div class="container">
+            <h1 class="sub-title">свяжитесь со мной</h1>
+            <div class="row">
+                <div class="contact-left">
+                    <p>
+                        Подписывайтесь на меня и подписывайтесь на мои 
+                        <br>
+                        <span id="red">НОВИНКИ!</span> Канал You<button id="tube" class="btn btn2">Tube</button>
+                    </p>
+                    <p><i class="fa-solid fa-paper-plane"></i> aleitango@hotmail.com</p>
+                    <p><i class="fa-brands fa-whatsapp"></i> +5491163654050</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/alejandra.mantinan" target="_blank"><i id="social-fb" class="fab fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/alejandra_mantinan/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.youtube.com/channel/UCffFP0pSEGYQ8YBKmS0t1iQ/videos?view=0&sort=p" target="_blank"><i id="social-yt" class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="contact-right">
+                    <form action="https://formsubmit.co/mkaratsioris@yahoo.com" method="POST">
+                        <div class="form-name">
+                            <input type="text" name="First Name" placeholder="Имя" required>
+                            <input type="text" name="Last Name" placeholder="Фамилия" required>
+                        </div>
+                        <div class="form-place">
+                            <input type="text" name="City" placeholder="Город"required>
+                            <input type="text" name="Country" placeholder="Страна"required>
+                        </div>
+                        <div class="form-info">
+                            <input id="email" type="text" name="Email" placeholder="Эл. адрес" required>
+                            <input id="subject" type="text" name="Subject" placeholder="Предмет" required>
+                            <input type="hidden" name="_subject" value="New email from alejandramantiñan.com">
+                        </div>
+                        <textarea name="Message" cols="5" rows="5" placeholder="Пишите ваше сообщение здесь!"></textarea>
+                        <button type="submit" class="btn btn2">Отправлять!</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- -------------------- FOOTER SECTION -------------------- -->
+
+    <footer>
+        <span><span class="far fa-copyright"></span>Alejandra Mantiñan 1991-2022. Все права защищены.
+        <br>
+        ~ Создано с <span class="red"><i class="fas fa-heart"></i> MorakiMu ~</span>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+<!-- -------------------- Created by Michalis Karatsioris -------------------- -->
+
+</html>
