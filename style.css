@@ -15,7 +15,7 @@
 }
 html{
     scroll-behavior: smooth;
-    background: #111;
+    background: rgb(249, 248, 250);
 }
 .max-width{
     max-width: 1600px;
@@ -116,22 +116,22 @@ html{
     height: 30px;
 }
 #eng:before{
-    background: url("img/us-c.svg") no-repeat center;
+    background: url("img/countries/us-c.svg") no-repeat center;
 }
 #es:before{
-    background: url("img/es-c.svg") no-repeat center;
+    background: url("img/countries/es-c.svg") no-repeat center;
     margin-top: 20px;
 }
 #it:before{
-    background: url("img/it-c.svg") no-repeat center;
+    background: url("img/countries/it-c.svg") no-repeat center;
     margin-top: 20px;
 }
 #ru:before{
-    background: url("img/ru-c.svg") no-repeat center;
+    background: url("img/countries/ru-c.svg") no-repeat center;
     margin-top: 20px;
 }
 #cn:before{
-    background: url("img/cn-c.svg") no-repeat center;
+    background: url("img/countries/cn-c.svg") no-repeat center;
     margin-top: 20px;
 }
 
@@ -201,377 +201,10 @@ video{
   opacity: 0.8;
 }
 
-/* -------------------- ABOUT SET UP -------------------- */
-
-#about{
-    padding: 200px;
-    padding-top: 120px;
-    padding-bottom: 50px;
-    background: url("img/satin-black.png") no-repeat center;
-    background-size: cover;
-    background-attachment: fixed;
-    text-align: justify;
-    color: #fff;
-}
-.about-photo{
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-.about-photo img{
-    flex-basis: 35%;
-    width: 30%;
-    border-radius: 50%;
-}
-.about-photo p{
-    flex-basis: 65%;
-    padding-left: 30px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.sub-title{
-    font-size: 60px;
-    font-weight: 600;
-    color: crimson;
-    position: relative;
-    text-align: center;
-    margin-bottom: 50px;
-}
-.sub-title::after{
-    content: '';
-    width: 270px;
-    height: 3px;
-    position: absolute;
-    left: 0;
-    bottom: -6px;
-    transition: 0.7s;
-}
-.tab-titles{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 20px 50% 40px;
-}
-.tab-categories{
-    margin-right: 50px;
-    font-size: 20px;
-    font-weight: 500;
-    cursor: pointer;
-    position: relative;
-}
-.tab-categories::after{
-    content: '';
-    width: 0;
-    height: 3px;
-    background: crimson;
-    position: absolute;
-    left: 0;
-    bottom: -8px;
-    transition: 0.7s;
-}
-.tab-categories.active-category::after{
-    width: 100%;
-}
-.tab-categories:hover::after{
-    width: 100%;
-}
-.tab-contents{
-    margin: 0;
-    font-size: 15px;
-}
-#articles{
-    padding-bottom: 270px;
-}
-#articles ul li{
-    list-style-type: circle;
-}
-.tab-contents{
-    display: none;
-}
-.tab-contents.active-tab{
-    display: block;
-}
-#articles li a{
-    color: #fff;
-}
-
-/* -------------------- SCHEDULE SET UP -------------------- */
-
-.schedule{
-    font-family: 'Poppins', sans-serif;
-    background: url("img/satin-black.png") no-repeat center;
-    background-size: cover;
-    background-attachment: fixed;
-    color:#fff;
-}
-.schedule .title{
-    font-size: 60px;
-    font-weight: 600;
-    color: crimson;
-    position: relative;
-    text-align: center;
-    margin-bottom: 50px;
-    color: crimson;
-    font-family: 'Ubuntu', sans-serif;
-}
-#online{
-    text-align: center;
-}
-#online a{
-    color: crimson;
-}
-.carousel .year{
-    color: crimson
-}
-.schedule .carousel .card{
-    background: #222;
-    /* background: none; */
-    border: solid 1px crimson;
-    border-radius: 50px;
-    padding: 25px 35px;
-    text-align: center;
-    overflow: hidden;
-    transition: all 0.3s ease;
-}
-.schedule .carousel .card:hover{
-    background: crimson;
-}
-.schedule .carousel .card:hover .year{
-    color: #fff;
-}
-.schedule .carousel .card .box{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    transition: all 0.3s ease;
-}
-.schedule .carousel .card:hover .box{
-    transform: scale(1.05);
-}
-.schedule .carousel .card .box p{
-    font-size: 20px;
-}
-.schedule .carousel .card .text{
-    font-size: 25px;
-    font-weight: 500;
-    margin: 10px 0 7px 0;
-}
-.schedule .carousel .card img{
-    background: none;
-    height: 150px;
-    width: 150px;
-    object-fit: cover;
-    border-radius: 50%;
-    border: 5px solid crimson;
-    transition: all 0.3s ease;
-}
-.schedule .carousel .card:hover img{
-    border-color: #fff;
-}
-.owl-dots{
-    text-align: center;
-    margin-top: 20px;
-}
-.owl-dot{
-    height: 13px;
-    width: 13px;
-    margin: 0 5px;
-    outline: none!important;
-    border-radius: 50%;
-    border: 2px solid crimson!important;
-    transition: all 0.3s ease;
-}
-.owl-dot.active{
-    width: 35px;
-    border-radius: 14px;
-}
-.owl-dot.active,
-.owl-dot:hover{
-    background: crimson!important;
-}
-
-/* -------------------- GALLERY SET UP -------------------- */
-
-#gallery{
-    padding: 200px;
-    padding-top: 120px;
-    padding-bottom: 100px;
-    background: url("img/satin-black.png") no-repeat center;
-    background-size: cover;
-    background-attachment: fixed;
-    color: #fff;
-}
-.gallery-list{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
-    grid-gap: 40px;
-    margin-top: 50px;
-}
-.gallery-card{
-    border-radius: 10px;
-    position: relative;
-    overflow: hidden;
-}
-.gallery-card img{
-    width: 100%;
-    border-radius: 10px;
-    display: block;
-    transition: all 0.7s ease;
-}
-.layer-card{
-    width: 100%;
-    height: 0;
-    background: linear-gradient(rgba(0,0,0,0.6),crimson);
-    border-radius: 10px;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    padding: 0 40px;
-    text-align: center;
-    font-size: 40px;
-    transition: all 0.7s ease;
-}
-.layer-card h3{
-    font-weight: 500;
-    margin-bottom: 10px;
-}
-.layer-card a{
-    margin-top: 60px;
-    color: crimson;
-    text-decoration: none;
-    font-size: 20px;
-    line-height: 60px;
-    background: #fff;
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    text-align: center;
-}
-.gallery-card:hover img{
-    transform: scale(1.1);
-}
-.gallery-card:hover .layer-card{
-    height: 100%;
-}
-
-/* -------------------- CONTACT SET UP -------------------- */
-
-#contact{
-    padding: 100px;
-    background: url("img/satin-black.png") no-repeat center;
-    background-size: cover;
-    background-attachment: fixed;
-    text-align: justify;
-    color: #fff;
-}
-.contact-left{
-    flex-basis: 35%;
-    display: block;
-    text-align: center;
-    justify-content: space-between;
-    padding-left: 100px;
-    padding-right: 50px;
-    padding-bottom: 50px;
-}
-.contact-right{
-    flex-basis: 60%;
-    display: flex;
-    text-align: center;
-    justify-content: space-between;
-    padding-left: 100px;
-    padding-right: 50px;
-}
-.contact-left p{
-    margin-top: 30px;
-    font-size: 20px;
-}
-.contact-left p i{
-    color: crimson;
-    margin-right: 15px;
-    font-size: 25px;
-}
-#red{
-    color: crimson;
-}
-#tube{
-    padding: 3px;
-    border: solid #fff 1px;
-    border-radius: 10px;
-    margin-left: 2px;
-}
-.social-icons{
-    margin-top: 30px;
-}
-.social-icons a{
-    text-decoration: none;
-    font-size: 30px;
-    margin-right: 15px;
-    color: #fff;
-    display: inline-block;
-    transition: all 0.5s ease;
-}
-.social-icons a:hover{
-    color: crimson;
-    transform: translateY(-5px);
-}
-.btn.btn2{
-    display: inline-block;
-    background: crimson;
-    font-size: 20px;
-    font-weight: 500;
-    color: #fff;
-    transition: all 0.5s ease;
-}
-.btn.btn2:hover{
-    background: none;
-    color: crimson;
-}
-.contact-right form{
-    width: 100%;
-}
-form input,
-form textarea{
-    width: 100%;
-    border: 0;
-    outline: none;
-    background: #262626;
-    padding: 15px;
-    margin: 15px 0;
-    color: #fff;
-    font-size: 20px;
-    border-radius: 6px;
-}
-form .btn2{
-    margin-top: 20px;
-    padding: 15px 60px;
-    border: solid crimson 2px;
-    border-radius: 30px;
-    cursor: pointer;
-}
-form .form-name,
-form .form-info,
-form .form-place{
-    display: flex;
-    text-align: center;
-    justify-content: space-between;
-    padding-right: 5px;
-}
-form input,
-form textarea{
-    margin: 5px;
-}
-
 /* -------------------- FOOTER SET UP -------------------- */
 
 footer{
-    background: url("img/satin-black.png") no-repeat center;
+    background: #111;
     background-size: cover;
     background-attachment: fixed;
     color: #fff;
