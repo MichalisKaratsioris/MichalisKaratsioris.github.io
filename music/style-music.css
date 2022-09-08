@@ -173,7 +173,7 @@ html{
 
 /* -------------------- MUSIC PLAYER SET UP -------------------- */
 
-#music-player{
+/* #music-player{
     background: url("../img/satin-black.png") no-repeat center;
     background-size: cover;
     background-attachment: fixed;
@@ -183,8 +183,11 @@ html{
     padding: 0 250px;
     margin: auto;
     min-height: 100vh;
-}
+} */
 .wrapper{
+    background: url("../img/satin-black.png") no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
     position: relative;
     overflow: hidden;
     width: 380px;
